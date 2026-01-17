@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Muneesh Nigam</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ABOUT PAGE SPECIFIC STYLES */
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: #103a64;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #78350f;
+    }
+
+    .aboutSection {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .aboutSection h1 {
+      font-size: 3rem;
+      color: #103a64;
+      margin-bottom: 20px;
+    }
+
+    .aboutSection p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #374151;
+    }
+
+    .aboutSection h2 {
+      font-size: 2rem;
+      color: #78350f;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .aboutSection ul {
+      list-style: "▹ ";
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .aboutSection ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #111827;
+    }
+
+    .aboutSection .btn {
+      padding: 12px 25px;
+      margin-right: 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .aboutSection .primary-btn {
+      background-color: #103a64;
+      color: white;
+    }
+
+    .aboutSection .primary-btn:hover {
+      background-color: #78350f;
+    }
+
+    .aboutSection .secondary-btn {
+      border: 2px solid #103a64;
+      color: #103a64;
+      background-color: transparent;
+    }
+
+    .aboutSection .secondary-btn:hover {
+      background-color: #103a64;
+      color: white;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">Muneesh Nigam</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section class="aboutSection">
+    <h1>About Me</h1>
+    <p>
+      Hello! I’m <span class="Blue">Muneesh Nigam</span>,a passionate Python Full Stack & Web Developer.
+      I design and develop modern, responsive, and interactive web applications.
+    </p>
+    <p>I hold a Bachelor of Computer Applications (BCA) from IIMT College, Greater Noida (2025) and have completed a Python Full Stack Developer course from DUCAT IT Training School, Ghaziabad</p>
+    <p>
+      I have worked with HTML, CSS, JavaScript, Python, Django, SQL, and several other tools over the years.
+      I enjoy turning ideas into real-world projects and creating clean, scalable, and maintainable code.
+    </p>
+
+    <h2>My Goals</h2>
+    <ul>
+      <li>Build responsive and modern web applications.</li>
+      <li>Improve my skills in full stack development.</li>
+      <li>Contribute to open-source projects and continuously learn new technologies.</li>
+    </ul>
+
+    <a href="resume.pdf" class="btn primary-btn" download>Download Resume</a>
+    <a href="https://wa.me/918077116821" class="btn secondary-btn" target="_blank">Contact Me</a>
+  </section>
+
+</body>
+</html>

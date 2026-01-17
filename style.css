@@ -1,0 +1,348 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: #111827;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #103a64;
+    color: white;
+    padding: 0 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: brown;
+    font-size: 1.04em;
+}
+.left{
+    font-size: 1.5rem;
+}
+
+/* HERO SECTION */
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Important for mobile stacking */
+    margin: 60px 0;
+    padding: 0 20px;
+}
+.leftSection{
+    font-size: 2rem;
+    width: 45%; /* desktop width */
+}
+.rightSection{
+    width: 45%; /* desktop width */
+    text-align: center;
+}
+.rightSection img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0;
+}
+.Blue, #element{
+    color: #78350F;
+}
+
+/* SECOND SECTION */
+.secondSection{
+    max-width: 80vw;
+    margin: 20px auto;
+    font-size: 15px;
+    height: auto;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px){
+    .firstSection{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftSection, .rightSection{
+        width: 100%;
+    }
+
+    .leftSection{
+        font-size: 1.6rem;
+    }
+
+    .rightSection img{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+}
+
+/* SMALL MOBILE (375px) */
+@media (max-width: 375px){
+    .leftSection{
+        font-size: 1.3rem;
+    }
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}  
+@media (max-width: 768px) {
+  .secondSection,
+  .skills-section {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+}
+.main hr{
+border: 0;
+background-color: black;
+height: 1px;
+margin: 15px 0;
+}
+.textgray{
+    color: #103a64;
+    margin: auto;
+}
+.work{
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    color: black;
+
+}
+.work li {
+    margin-bottom: 8px;
+}
+
+.brown{
+    color: #78350F;
+    font-size: 25px;
+}
+.footer{
+    display: flex;
+    padding: 23px 20px;
+}
+footer{
+    background-color: #103a64;
+    height: 233px;
+    color: white;
+}
+.skills-section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.section-number {
+  font-size: 14px;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+.skills-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 20px 0 50px;
+  line-height: 1.2;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  font-size: 1.6rem;
+  padding: 18px 0;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (modern) */
+.skills-list li:hover {
+  padding-left: 10px;
+  color: #78350f; 
+}
+.skills-list li {
+  position: relative;
+}
+
+.skills-list li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #78350f;
+  transition: width 0.4s ease;
+}
+
+.skills-list li:hover::after {
+  width: 100%;
+}
+.secondSection,
+.skills-section {
+    max-width: 1100px;      
+    margin-left: 40px;      
+    margin-right: auto;    
+    padding-right: 20px;
+}
+nav{
+    padding: 0 20px;
+}
+.footer {
+  background-color: #103a64;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin-left: 40px;
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fbbf24;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer-container {
+    margin-left: 0;
+    gap: 40px;
+  }
+}
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #e5e7eb;
+  letter-spacing: 0.3px;
+}
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Common button style */
+.btn {
+  padding: 12px 26px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Resume button (Primary) */
+.primary-btn {
+  background-color: #78350F;
+  color: white;
+  border: 2px solid #78350F;
+}
+
+.primary-btn:hover {
+  background-color: transparent;
+  color: #78350F;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #78350F;
+  border: 2px solid #78350F;
+}
+
+.secondary-btn:hover {
+  background-color: #78350F;
+  color: white;
+}
+@media (max-width: 768px) {
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+.hero-buttons{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}

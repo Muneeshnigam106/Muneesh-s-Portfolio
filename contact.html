@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Muneesh Nigam</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: #103a64;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #78350f;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .section-number {
+      font-size: 14px;
+      color: #6b7280;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 20px 0 40px;
+      color: #103a64;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-list li {
+      font-size: 1.4rem;
+      padding: 18px 0;
+      border-bottom: 1px solid #000;
+      transition: 0.3s;
+    }
+
+    .contact-list li:hover {
+      padding-left: 10px;
+      color: #78350f;
+    }
+
+    .contact-list a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-desc {
+      margin: 30px 0;
+      font-size: 1.2rem;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .primary-btn {
+      background-color: #103a64;
+      color: white;
+    }
+
+    .primary-btn:hover {
+      background-color: #78350f;
+    }
+
+    .secondary-btn {
+      border: 2px solid #103a64;
+      color: #103a64;
+      background: transparent;
+    }
+
+    .secondary-btn:hover {
+      background-color: #103a64;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">Muneesh Nigam</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <span class="section-number"></span>
+    <h2 class="section-title">Get In Touch</h2>
+
+    <p class="contact-desc">
+      I’m always open to discussing new projects, job opportunities, or collaborations.
+      Feel free to reach out — I’ll get back to you as soon as possible.
+    </p>
+
+    <ul class="contact-list">
+      <li>📧 Email: <a href="mailto:Muneeshnigam203203@gmail.com">Muneeshnigam203203@gmail.com</a></li>
+      <li>📞 Phone: <a href="tel:+918077116821">+91 8077116821</a></li>
+      <li>📍 Location: Noida</li>
+      <li>    Instagram:<a href="https://www.instagram.com/_munish106?igsh=MXEya2FtZHZrZ2Jwaw==">_munish106</a> </li>
+    </ul>
+
+    <div class="contact-buttons">
+      <a href="https://wa.me/918077116821" target="_blank" class="primary-btn">
+        WhatsApp Me
+      </a>
+      <a href="resume.pdf" download class="secondary-btn">
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>

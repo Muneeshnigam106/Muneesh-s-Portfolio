@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Muneesh Nigam</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* SKILLS PAGE SPECIFIC STYLES */
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: #103a64;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #78350f;
+    }
+
+    .skills-section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .section-number {
+      font-size: 14px;
+      color: #6b7280;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 20px 0 40px;
+      line-height: 1.2;
+      color: #103a64;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skills-list li {
+      font-size: 1.6rem;
+      padding: 18px 0;
+      border-bottom: 1px solid #000;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .skills-list li::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #78350f;
+      transition: width 0.4s ease;
+    }
+
+    .skills-list li:hover {
+      padding-left: 10px;
+      color: #78350f;
+    }
+
+    .skills-list li:hover::after {
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">Muneesh Nigam</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills-section">
+    <span class="section-number"> Skills</span>
+    <h2 class="section-title">Tools I’ve Worked With</h2>
+
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Django</li>
+      <li>SQL (My SQL)</li>
+    </ul>
+  </section>
+
+</body>
+</html>
