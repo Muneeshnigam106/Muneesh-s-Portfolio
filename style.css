@@ -347,7 +347,7 @@ nav{
     gap: 15px;
 
 }
-ooter {
+footer {
   background-color: #103a64;
   color: white;
   text-align: center;
@@ -361,3 +361,4 @@ ooter {
     padding: 20px;
   }
 }
+
