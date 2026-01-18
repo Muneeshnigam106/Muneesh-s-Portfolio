@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muneesh- Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Muneesh Nigam</div>
+            <div class=" right">
+                 <ul>
+              <li><a href="about.html"> Home </a></li>
+                <li><a href="about.html">About </a></li>
+               <li><a href="skills.html"> Skills</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="contact.html"> Contact Me</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, I'm <span class="Blue">Muneesh Nigam</span>
+                <div>I design and develop modern web experiences and</div>
+                <span id="element"></span>
+                <div class="hero-buttons">
+                    <a href="MUNEESH_CV (1) (2).pdf" class="btn primary-btn" download>Download Resume</a>
+                    <a href="https://wa.me/918077116821?text=Hello%20Muneesh,%20I%20saw%20your%20portfolio"
+                        class="btn secondary-btn" target="_blank">
+                        Contact Me</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image.3.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="textgray"> What I have done so far</span>
+            <h1>Work Experiences</h1>
+            <br>
+            <ul class="work">
+                <span class="brown">Artificial Intelligence Intern – Acmegrade Pvt. Ltd. (Remote)</span>
+                <br>
+                Aug 2024 – Oct 2024
+                <br>
+                <li>Completed a structured internship focused on Artificial Intelligence and Machine Learning.</li>
+
+                <li>Worked on real-world projects, enhancing practical understanding of AI concepts.</li>
+                <li>Improved problem-solving, analytical thinking, and technical skills through hands-on tasks.</li>
+                <li>Gained exposure to Python, data handling, and basic model implementation.</li>
+            </ul>
+        </section>
+        <section class="skills-section">
+            <span class="thirdSection"></span>
+            <h2 class="skills-list">Technologies I've Worked With Over The Years</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>DJango</li>
+                <li>SQl (MySQL)</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-col">
+                <h3>Muneesh'Portfolio</h3>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email:<a href="mailto:Muneeshnigam203203@gmail.com">Muneeshnigam203203@gmail.com</a> </li>
+                    <li><a href="https://github.com/Muneeshnigam106">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/muneesh-nigam-02a66125a">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/_munish106?igsh=MXEya2FtZHZrZ2Jwaw==">Instagram</a></li>
+                    <li>Phone: <a href="tel:+918077116821">+91 8077116821</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            © <span id="year"></span> Muneesh Nigam. All rights reserved.
+        </div>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Creating scalable web solutions', 'Designing experiences that users love', 'Working with modern web technologies', 'Turning ideas into interactive web experiences'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+  const footer = document.querySelector(".footer");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          footer.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(footer);
+</script>
+
+</body>
+
+</html>
