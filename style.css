@@ -558,4 +558,15 @@ nav{
   .footer-container {
     grid-template-columns: 1fr; /* Stack neatly */
   }
+
+}
+.footer {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
 }
