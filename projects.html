@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Muneesh Nigam</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* PROJECTS PAGE SPECIFIC STYLES */
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #111827;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: #103a64;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #78350f;
+    }
+
+    .projects-section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .section-number {
+      font-size: 14px;
+      color: #6b7280;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 20px 0 40px;
+      line-height: 1.2;
+      color: #103a64;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .project-list li {
+      font-size: 1.3rem;
+      padding: 18px 0;
+      border-bottom: 1px solid #000;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .project-list li::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #78350f;
+      transition: width 0.4s ease;
+    }
+
+    .project-list li:hover {
+      padding-left: 10px;
+      color: #78350f;
+    }
+
+    .project-list li:hover::after {
+      width: 100%;
+    }
+
+    .project-list a {
+      text-decoration: none;
+      color: #111827;
+    }
+
+    .project-list a:hover {
+      color: #78350f;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      color: #374151;
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">Muneesh Nigam</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section">
+    <span class="section-number"></span>
+    <h2 class="section-title">My Projects</h2>
+
+    <ul class="project-list">
+      <li>
+        <a href="https://muneeshnigam106.github.io/Hospital-Management-System/" target="_blank">
+          Hospital Management System
+        </a>
+        <p class="project-desc">
+          A full-fledged hospital management system built with Django and MySQL. Features include patient registration, appointment scheduling, billing, and staff management.
+        </p>
+      </li>
+
+      <li>
+        <a href="https://ecommerce-ui-clone-indol.vercel.app" target="_blank">
+          Ecommerce UI Clone
+        </a>
+        <p class="project-desc">
+          Frontend clone of an e-commerce website designed with HTML, CSS, and JavaScript. Fully responsive with modern UI components.
+        </p>
+      </li>
+
+      <li>
+        <a href="https://muneeshfashion.myshopify.com" target="_blank">
+          Muneesh Fashion Shopify Store
+        </a>
+        <p class="project-desc">
+          An online fashion store built using Shopify. Features modern layouts, product collections, and easy navigation for users.
+        </p>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          Muneesh'Portfolio
+        </a>
+        <p class="project-desc">
+  Created a personal portfolio website to show my skills, projects, and basic information.
+  The website includes sections like Home, About, Skills, Projects, and Contact.
+</p>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>
